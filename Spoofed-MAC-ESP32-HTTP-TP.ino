@@ -2,9 +2,7 @@
   Packages Required : ArduinoJSON Library 
                     : Arduino Http Client Library
                     
-  Version : 01.07.2023
-  Maintained By : @bhupendra.jmd@gmail.com, Developed for PG-DESD, Students @ACTS,PUNE
-  Business Requirements : Post data using http protocol (POST Method) to Thingspeak (Bulk Upload)
+   Project Description: Post data using http protocol (POST Method) to Thingspeak (Bulk Upload)
 
   Additional features:
   Customized MAC using esp_wifi library
@@ -17,14 +15,14 @@
 #include <esp_wifi.h>
 
 // Set the custom MAC address in case your ESP32 is not regsitered with the acts network
-uint8_t newMACAddress[] = {0xf4, 0x96, 0x34, 0x9d, 0xe6, 0x2b};
-
+uint8_t newMACAddress[] = {0xf4, 0x96, 0x34, 0x9d, 0xe6, 0x2b}; //Enter the MAC address of wifi
+//On linux you can check the wifi MAC addr using ifconfig command
 
 /*
  * Replaced the ssid and password based on the router credentials
  */
-const char* ssid = "forestiot";  //SSID Name to which ESP32 will connect 
-const char* password = "sidver1234";  //SSID Password
+const char* ssid = "acts";  //Enter the SSID Name to which ESP32 will connect 
+const char* password = " ";  //Enter SSID Password
 
 /*
  * 
@@ -102,7 +100,7 @@ void loop()
          
    /* Update the Write API_KEY HERE */
    
-   sensor_data["write_api_key"] = "OJTVRZUUY6AVV7GU";  
+   sensor_data["write_api_key"] = "OJTVRZUUY6AVV7GU";  // Enter the write API key from thingspeak
 
    /* field details   */
    
