@@ -2,7 +2,7 @@
   Packages Required : ArduinoJSON Library 
                     : Arduino Http Client Library
                     
-  Project Description: Post data using http protocol (POST Method).Using this code you can send your data on Thingspeak 
+  Project Description: Post data using http protocol (POST Method).Using this code you can send random data on Thingspeak 
  */
 
 #include <WiFi.h>           //Wifi-Library for ESP32
@@ -11,7 +11,9 @@
 #include <esp_wifi.h>
 
 // Set your new MAC Address
-uint8_t newMACAddress[] = {0xf4, 0x96, 0x34, 0x9d, 0xe6, 0x2b};
+uint8_t newMACAddress[] = {0xf4, 0x96, 0x34, 0x9d, 0xe6, 0x2b}; 
+// this is the MAC address of of wifi
+
 const char* ssid = "acts";  //Enter SSID Name to which ESP32 (Teche mote is about to connect to )
 const char* password = "";  //Enter SSID Password
 
