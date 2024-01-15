@@ -2,8 +2,7 @@
   Packages Required : ArduinoJSON Library 
                     : Arduino Http Client Library
                     
-  Version : 02.09.2021
-  Business Requirements : Post data using http protocol (POST Method)
+  Business Requirements : Post data using http protocol (POST Method) to thingsboard platform
  */
 
 #include <WiFi.h>           //Wifi-Library for ESP32
@@ -13,8 +12,8 @@
 
 // Set your new MAC Address
 uint8_t newMACAddress[] = {0xf4, 0x96, 0x34, 0x9d, 0xe6, 0x2b};
-const char* ssid = "acts";  //SSID Name to which ESP32 (Teche mote is about to connect to )
-const char* password = "";  //SSID Password
+const char* ssid = "acts";  //Enter SSID Name to which ESP32 (Teche mote is about to connect to )
+const char* password = "";  //Enter SSID Password
 
 /*
  * 
